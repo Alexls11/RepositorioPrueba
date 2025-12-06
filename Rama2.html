@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Rama 3</title>
+    <title>Registro de Usuario - Rama 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
             height: 100vh;
         }
 
-        .login-container {
+        .registration-container {
             background-color: #fff;
             padding: 30px;
             border-radius: 8px;
@@ -53,32 +53,33 @@
             background-color: #45a049;
         }
 
-        .forgot-password {
+        .login-link {
             text-align: center;
             margin-top: 10px;
         }
 
-        .forgot-password a {
+        .login-link a {
             text-decoration: none;
             color: #007BFF;
         }
 
-        .forgot-password a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>Iniciar Sesión - Rama 3</h2>
+    <div class="registration-container">
+        <h2>Registro de Usuario - Rama 2</h2>
         <form action="#" method="POST">
-            <input type="text" name="username" placeholder="Nombre de usuario" class="input-field" required>
+            <input type="text" name="fullname" placeholder="Nombre Completo" class="input-field" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" class="input-field" required>
             <input type="password" name="password" placeholder="Contraseña" class="input-field" required>
-            <button type="submit" class="btn">Iniciar Sesión</button>
+            <button type="submit" class="btn">Registrarse</button>
         </form>
-        <div class="forgot-password">
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+        <div class="login-link">
+            <p>¿Ya tienes cuenta? <a href="#">Iniciar sesión</a></p>
         </div>
     </div>
 
